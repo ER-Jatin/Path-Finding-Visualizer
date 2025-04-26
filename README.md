@@ -3,6 +3,19 @@
 # Pathfinder Visualizer
 A web-based application built with React to visualize various pathfinding algorithms in action on a customizable grid. Witness how algorithms like Breadth-First Search (BFS), Depth-First Search (DFS), Dijkstra's Algorithm, and A* Search explore and find the shortest path between a start and an end node.
 
+
+## Demo
+
+[**[Live Demo Link Here]**](https://ER-Jatin.github.io/Path-Finding-Visualizer/)
+
+**Demo Instructions:**
+
+1.  Visit the [Live Demo Link Here](https://ER-Jatin.github.io/Path-Finding-Visualizer/).
+2.  **Create Walls:** Click and drag your mouse on the grid to draw obstacles.
+3.  **Select Algorithm:** Choose an algorithm from the left panel (e.g., BFS, A*).
+4.  **Click "Visualize"**: Observe the algorithm find a path (or explore).
+5.  **Use Controls:** Experiment with clearing the grid, resetting walls, and trying different algorithms.
+
 ## Features
 * **Interactive Grid:** Create and customize the grid by drawing walls to simulate obstacles.
 * **Algorithm Selection:** Choose from four popular pathfinding algorithms:
