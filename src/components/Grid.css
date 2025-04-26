@@ -1,0 +1,164 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:flex-start;
+  gap: 1px;
+  overflow-x: auto;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  background-color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.start {
+  background-color: green;
+}
+
+.end {
+  background-color: red;
+}
+
+.wall {
+  background-color: black;
+}
+
+.visited {
+  background-color: lightblue;
+}
+
+.shortest-path {
+  background-color: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 0, 0.7);
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.shortest-path:hover {
+  background-color: #f0e700;
+  box-shadow: 0 0 15px 5px rgba(255, 255, 0, 1);
+}
+
+.wall:hover {
+  background-color: #333;
+}
+
+.visualize-btn, .clear-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.visualize-btn {
+  background-color: #0077ff;
+}
+
+.visualize-btn:hover {
+  background-color: #0055aa;
+}
+
+.clear-btn {
+  background-color: #ff4d4d;
+}
+
+.clear-btn:hover {
+  background-color: #cc0000;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    width: 100%;
+  }
+
+  .visualize-btn, .clear-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+.stop-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #e74c3c; /* Red color */
+}
+
+.stop-btn:hover {
+  background-color: #c0392b; /* Darker red for hover effect */
+}
+
+@media (max-width: 768px) {
+  .stop-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* In Grid.css */
+
+.pathfinder-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2c3e50; /* Dark color for the text */
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #3498db, #9b59b6); /* Gradient background */
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pathfinder-heading:hover {
+  cursor: pointer;
+  color: white; /* Text color changes to white on hover */
+  background: linear-gradient(45deg, #2980b9, #8e44ad); /* Darker gradient on hover */
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.pathfinder-heading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1); /* Subtle highlight effect */
+  border-radius: 8px;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.pathfinder-heading:hover::before {
+  opacity: 0.3; /* Increase the highlight opacity on hover */
+}
+
