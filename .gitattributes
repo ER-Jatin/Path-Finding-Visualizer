@@ -1,0 +1,16 @@
+* text=auto
+*.gitignore text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+package.json text eol=lf
+package-lock.json text eol=lf
+public/index.html text eol=lf
+public/manifest.json text eol=lf
+public/robots.txt text eol=lf
+src/App.css text eol=lf
+src/App.js text eol=lf
+src/App.test.js text eol=lf
+src/index.css text eol=lf
+src/index.js text eol=lf
+src/setupTests.js text eol=lf
+# Add any other text-based file extensions you have in your project
