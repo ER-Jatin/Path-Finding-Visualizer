@@ -1,2 +1,8 @@
-# Path-Finding-Visualizer
-A web-based application for visualizing pathfinding algorithms like BFS, DFS, Dijkstra, and A*.
+
+<<<<<<< HEAD
+# Your local README.md content
+This is a description of my local changes.
+=======
+# Remote README.md content
+This is the initial README from GitHub.
+>>>>>>> origin/main
